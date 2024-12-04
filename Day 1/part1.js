@@ -1,5 +1,5 @@
-import * as fs from 'fs'
-import * as readline from 'readline'
+const fs = require('fs');
+const readline = require('readline');
 
 function parseInput(){
     return new Promise((res, rej) => {
@@ -33,7 +33,7 @@ const diff = []
 
 for(let i = 0; i < arrOne.length; i++){
     const x = arrOne[i];
-    const y = arrTwo[i]
+    const y = arrTwo[i];
     const d = x >= y ? x-y:y-x;
     diff.push(d);
 }
